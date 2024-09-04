@@ -15,7 +15,7 @@ Reading: Chapter 2.1, 2.2, 2.6.
 
 Download Eclipse. Java Review.
 
-In textbook: code fragments 2.2, 2.3, 2.4. Qs 2.10, 11, 12, 13, 17, 21, 24, 25, 26, 29
+In textbook: code fragments 2.2, 2.3, 2.4. Qs 2.10, 11, 12, 13, 17, 21, 24, 29
 
 ### Class 2 Sept 11
 
