@@ -1,0 +1,154 @@
+Recitation 1
+
+Recording: https://nyu.zoom.us/rec/share/nAOSdwStyxIj5KgT3K39V_BqJ603E3NQ8DSw0KDCDfDpQ3yTZZ8JaXN487MVixw.xoZTH6EImFAc8kci
+
+Reference materials: Goodrich Chapter 2
+1. Introduction
+    1. Office hour + contact
+        1. Office hour: Tuesday 1:00 - 3:00PM at 60 Fifth Ave, Room 402
+        2. Email: charlie.chen@nyu.edu
+
+    2. Recitation logistics
+        1. Attendance and participation are required. No recordings.
+        2. Practice problems
+            Not graded. But it’s supposed to help you with quizzes. You should work out the practice problems in groups.
+        3. Quizzes (20 minutes before the end of the class)
+            1. The content is going to be related to the materials of the week. I will not answer questions regarding the quiz before it takes place.
+            2. I will provide my answer before the end of day on Friday (I will try to provide it before 4 PM).
+            3. Quizzes should be done by individuals.
+
+3. A quick recap of OOP
+    1. Inheritance
+        1. Inheritance is a way to extend the functionality of the original class. It provides more specifications to a class. It allows the children classes to reuse the code of the parent classes. It also allows encapsulation of particular methods.
+
+        2. Example
+        public class Animal {
+            private String my_name;
+            public Animal(String name) {
+                my_name = name;
+            }
+            public void introduce() {
+                System.out.println("My name is " + my_name);
+            }
+        }
+        public class Dog extends Animal {
+            private int height;
+            public Dog(String name, int height) {
+                super(name); // Use *super* to call the method in the parent class
+                this.height = height; // Use *this* to distinguish the name from the argument
+            }
+            public void introduce() {
+                super.introduce();
+                System.out.println("My height is " + height);
+            }
+            public static void main(String[] args) {
+                Dog dog_max = new Dog("Max", 10);
+                dog_max.introduce();
+            }
+        }
+
+        In this example, Dog is a subclass of Animal. Animal class provides the basic functionality of introduce. Dog further provides the element of height. Dog can reuse the functions defined in Animal and provide more specific functionality that may not be available to other Animal instance.
+
+    2. Interfaces & Abstract Classes
+        1. Interfaces also helps structure classes, like inheritance, but in a weaker way. A class that *implements* an interface means that the class implements the methods/functions declared by the interface. Interfaces have only *declarations* of methods, not the implementations of them.
+
+        2. Abstract classes are like the combination of interfaces and classes. First, we talk about abstract methods. Abstract methods are *declarations but not implementations*, just as in interfaces. Abstract classes are simply classes that have abstract methods. Abstract methods cannot be instantiated. Classes that inherit abstract classes are no longer abstract if they implement all the abstract methods.
+
+        3. Example
+        public interface Communictable {
+            public void talk(String input);
+        }
+        public class Dog implements Communictable {
+            public Dog() {}
+            public void talk(String input) {
+                System.out.println("Woof woof");
+            }
+            public static void main(String[] args) {
+                Dog my_dog = new Dog();
+                my_dog.talk("Hello");
+            }
+        }
+        // Anything that is communictable can implement the interface
+        public class RadioStation implements Communictable {
+            public RadioStation() {}
+            public void talk(String input) {
+                System.out.println("Received msg: " + input);
+            }
+            public static void main(String[] args) {
+                RadioStation my_station = new RadioStation();
+                my_station.talk("Hello");
+            }
+        }
+
+        In this example, both Dog and RadioStation implement the interface Communictable, but they are totally different things. Interface provides another way to organize classes, in a way that fits your requirements.
+    
+    3. Polymorphism
+        Why do we need inheritance, interfaces, and abstract classes? These concepts provide a systematic way to organize your code to achieve the goal of abstraction, encapsulation, and modularity. For example, the following code is allowed.
+
+        Animal max = new Dog("Max");
+
+        This should baffle you because the left hand side has a different type as the right hand side. For instance, "String a = 1;" is clearly illegal in java. This is the polymorphism feature of java. The object on the right hand side has many forms, Dog or Animal. This is convenient because we can write codes designed for Animal and use them for all the children of Animal, while creating subclasses with different characters. This is the idea of modularity.
+
+        Interface has a similar flavor. The philosophy is this: as long as this class implements the method A,B,C specified by Interface, I can treat this class as the Interface, no matter how those methods are impelmented. This is the idea of abstraction.
+
+2. Non-code Exercise
+    1. What are some potential efficiency disadvantages of having very shallow inheritance trees, that is, a large set of classes, A, B, C, and so on, such that all of these classes extend a single class, Z?
+
+    2. Draw a class inheritance diagram for the following set of classes:
+        - Class Goat extends Object and adds an instance variable tail and methods milk() and jump().
+        - Class Pig extends Object and adds an instance variable nose and methods eat(food) and wallow().
+        - Class Horse extends Object and adds instance variables height and color, and methods run() and jump().
+        - Class Racer extends Horse and adds a method race().
+        - Class Equestrian extends Horse and adds instance variable weight and isTrained, and methods trot() and isTrained().
+
+    3. Consider the inheritance of classes from the previous exercise, and let d be an object variable of type Horse. If d refers to an actual object of type Equestrian, can it be cast to the class Racer? Why or why not?
+
+    4. Considering the following code, what's the output
+        public class Maryland extends State {
+            Maryland() { /* null constructor */ }
+            public void printMe() { System.out.println("Read it."); }
+            
+            public static void main(String[] args) {
+                Region east = new State();
+                State md = new Maryland();
+                Object obj = new Place();
+                Place usa = new Region();
+                
+                md.printMe();                   // Call 1
+                east.printMe();                 // Call 2
+                ((Place) obj).printMe();        // Call 3
+                obj = md;
+                ((Maryland) obj).printMe();     // Call 4
+                obj = usa;
+                ((Place) obj).printMe();        // Call 5
+                usa = md;
+                ((Place) usa).printMe();        // Call 6
+            }
+        }
+
+        class State extends Region {
+            State() { /* null constructor */ }
+            public void printMe() { System.out.println("Ship it."); }
+        }
+
+        class Region extends Place {
+            Region() { /* null constructor */ }
+            public void printMe() { System.out.println("Box it."); }
+        }
+
+        class Place extends Object {
+            Place() { /* null constructor */ }
+            public void printMe() { System.out.println("Buy it."); }
+        }
+
+
+3. Eclipse IDE
+    1. Some example resources are:
+        1. Windows: https://www.geeksforgeeks.org/how-to-download-and-install-eclipse-on-windows/
+        2. Mac OS: https://www.youtube.com/watch?v=V7ggAMY2ybU
+    
+    2. Open projects + export projects
+
+4. Code Exercise (see the folder `recitation_codes`)
+    Implement GeometricProgression.java and FibonacciProgression.java
+
