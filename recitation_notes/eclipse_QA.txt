@@ -1,0 +1,6 @@
+Q: How to solve the problem `Editor does not contain a main type`
+A: https://stackoverflow.com/questions/24117713/editor-does-not-contain-a-main-type-in-eclipse
+
+
+Q: What does "Unresolved compilation problem" mean?
+A: Look for the errors displayed in your editor
