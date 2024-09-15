@@ -44,9 +44,9 @@ Reading: Chapter 3.2, 3.4.
 
 ### Class 5, Feb 5
 
-Worst case complexity algorithmic analysis and search algorithms. Start Stacks and Queues.
+Position lists. Worst case complexity algorithmic analysis and search algorithms.
 
-Reading: Chapter 4.1-4.3, 5.1.3
+Reading: Chapter 7.3, 4.1-4.3, 5.1.3
 
 ### Section 3
 
