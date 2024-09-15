@@ -30,3 +30,24 @@ Finish ArrayList implementation. Limitations of ArrayList. Start LinkedList.
 
 Reading: First part of Chapter 7.2, Chapter 3.2.
 
+### Section 2
+
+LinkedList practice.
+
+In textbook: code fragments 3.19. Qs 3.5, 6, 9, 12, 17, 18, 25, 26, 28
+
+### Class 4, Jan 31
+
+Doubly LinkedLists.
+
+Reading: Chapter 3.2, 3.4.
+
+### Class 5, Feb 5
+
+Worst case complexity algorithmic analysis and search algorithms. Start Stacks and Queues.
+
+Reading: Chapter 4.1-4.3, 5.1.3
+
+### Section 3
+
+#### Quiz 1 (Doubly linked lists)
