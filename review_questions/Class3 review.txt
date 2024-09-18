@@ -3,7 +3,7 @@
 What were the methods we implemented for ArrayList?
 Try and write out the method addFirst in your notebook.
 If an ArrayList has size n, roughly how many computations must it perform in addFirst? How about in addLast?
-What were the issues with this implementation of GoodList?
+What were the issues with this implementation of List?
 
 - LinkedLists -
 Write out the Node class in your notebook -- what are its methods and attributes?
