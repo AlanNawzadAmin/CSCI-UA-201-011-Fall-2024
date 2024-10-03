@@ -1,4 +1,4 @@
-# CSCI-UA-201-011-Fall-2024
+# CSCI-UA-102-011-Fall-2024
 Class repo for CSCI-UA 201 011, Fall 2024. I will update this page with updates of what we covered in class as well as notes.
 
 [Last year's class.](https://github.com/AlanNawzadAmin/CSCI-UA-201-011-Spring-2024)
