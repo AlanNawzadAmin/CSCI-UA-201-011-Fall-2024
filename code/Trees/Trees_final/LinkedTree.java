@@ -1,6 +1,6 @@
 package Trees_final;
 import LinkedList_final.DoublyLinkedList;
-import LinkedList_final.GoodList;
+import LinkedList_final.List;
 import StackQueues_final.Stack;
 import StackQueues_final.LinkedStack;
 import StackQueues_final.Queue;
@@ -20,7 +20,7 @@ public class LinkedTree<E> implements Tree<E>{
 		
 		public E getElement(){return element;}
 		public Node getParent() {return parent;}
-		public GoodList<Position<E>> getChildren() {return children;}
+		public List<Position<E>> getChildren() {return children;}
 	}
 	
 	Node root;
@@ -36,7 +36,7 @@ public class LinkedTree<E> implements Tree<E>{
 	public Position<E> parent(Position<E> p){
 		return ((Node)p).getParent();
 	};
-	public GoodList< Position<E> >  children(Position<E> p){
+	public List< Position<E> >  children(Position<E> p){
 		return ((Node)p).getChildren();
 	};
 	public int numChildren(Position<E> p) {
@@ -61,7 +61,7 @@ public class LinkedTree<E> implements Tree<E>{
 	
 	public int height(Position<E> p) {
 		int h = 0;
-		GoodList< Position<E> > ch = children(p);
+		List< Position<E> > ch = children(p);
 		for (int i=0;i< ch.size(); i++) {
 			h = Math.max(h, height(ch.getAtIndex(i)));
 		}
@@ -74,7 +74,7 @@ public class LinkedTree<E> implements Tree<E>{
 		while (stack.size() > 0) {
 			Position<E> next_pos = stack.pop();
 			if (next_pos.getElement() == element) return true;
-			GoodList<Position<E>> ch = children(next_pos);
+			List<Position<E>> ch = children(next_pos);
 			for (int j=0; j<ch.size(); j++) {
 				stack.push(ch.getAtIndex(j));
 			}
@@ -88,7 +88,7 @@ public class LinkedTree<E> implements Tree<E>{
 		while (queue.size() > 0) {
 			Position<E> next_pos = queue.dequeue();
 			if (next_pos.getElement() == element) return true;
-			GoodList<Position<E>> ch = children(next_pos);
+			List<Position<E>> ch = children(next_pos);
 			for (int j=0; j<ch.size(); j++) {
 				queue.enqueue(ch.getAtIndex(j));
 			}
@@ -97,29 +97,29 @@ public class LinkedTree<E> implements Tree<E>{
 	}
 	
 //	Using recursion
-	private GoodList<Position<E>> positionsRecursive(Position<E> p, GoodList<Position<E>> list){
+	private List<Position<E>> positionsRecursive(Position<E> p, List<Position<E>> list){
 		list.addLast(p);
-		GoodList<Position<E>> children = children(p);
+		List<Position<E>> children = children(p);
 		for (int i=0; i<children.size(); i++) {
 			positionsRecursive(children.getAtIndex(i), list);
 		}
 		return list;
 	}
 	
-	private GoodList<Position<E>> positionsRecursive(Position<E> p){
-		GoodList<Position<E>> list = new DoublyLinkedList<Position<E>>();
+	private List<Position<E>> positionsRecursive(Position<E> p){
+		List<Position<E>> list = new DoublyLinkedList<Position<E>>();
 		return positionsRecursive(p, list);
 	}
 	
 //	Using stacks
-	private GoodList<Position<E>> positions(Position<E> p){
-		GoodList<Position<E>> pos = new DoublyLinkedList<Position<E>>();
+	private List<Position<E>> positions(Position<E> p){
+		List<Position<E>> pos = new DoublyLinkedList<Position<E>>();
 		Stack<Position<E>> stack = new LinkedStack<Position<E>>();
 		stack.push(p);
 		while (stack.size() > 0) {
 			Position<E> next_pos = stack.pop();
 			pos.addLast(next_pos);
-			GoodList<Position<E>> ch = children(next_pos);
+			List<Position<E>> ch = children(next_pos);
 			for (int j=0; j<ch.size(); j++) {
 				stack.push(ch.getAtIndex(j));
 			}
@@ -127,7 +127,7 @@ public class LinkedTree<E> implements Tree<E>{
 		return pos;
 	}
 	
-	public GoodList<Position<E>> positions(){
+	public List<Position<E>> positions(){
 		return positions(root);
 	}
 }
