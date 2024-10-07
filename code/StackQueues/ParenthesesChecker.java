@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 
 public class ParenthesesChecker {
 	public static boolean check(String string) {

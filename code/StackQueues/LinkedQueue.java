@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 import LinkedList_final.DoublyLinkedList;
 
 public class LinkedQueue<E> extends DoublyLinkedList<E> implements Queue<E>{	

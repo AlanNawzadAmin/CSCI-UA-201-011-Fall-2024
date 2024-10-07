@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 import LinkedList_final.LinkedList;
 
 public class LinkedStack<E> implements Stack<E>{

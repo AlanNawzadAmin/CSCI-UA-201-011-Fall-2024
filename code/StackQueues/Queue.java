@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 
 public interface Queue<E> {
 	public abstract void enqueue(E element);

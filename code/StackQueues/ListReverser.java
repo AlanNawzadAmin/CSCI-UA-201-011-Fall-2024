@@ -1,4 +1,4 @@
-package StackQueues_final;
+package StackQueues;
 
 public class ListReverser{
 	public static <E> void reverse(E[] array) {
