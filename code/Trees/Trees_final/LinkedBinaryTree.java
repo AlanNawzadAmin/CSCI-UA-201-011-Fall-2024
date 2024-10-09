@@ -1,7 +1,7 @@
 package Trees_final;
 
 import LinkedList_final.DoublyLinkedList;
-import LinkedList_final.GoodList;
+import LinkedList_final.List;
 import StackQueues_final.LinkedQueue;
 import StackQueues_final.LinkedStack;
 import StackQueues_final.Queue;
