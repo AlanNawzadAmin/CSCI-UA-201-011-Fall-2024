@@ -116,27 +116,56 @@ Recursion and trees
 
 In textbook: All Qs from chapter 8 last week.
 
-### Class 12, Oct 14
+### Oct 14
+#### No class
 #### Assignment 2 (Linked trees)  due
+
+### Class 12, Oct 16
 
 Map ADT, Unsorted list implementation, Hash functions, compression functions
 
-
 Reading: Chapter 10.1, 10.2
 
-### Class 13, Oct 16
-
-Collision resolutions, start Binary search trees
-
-Reading: 10.2, 11.1
-
-
-### Section 6, Oct 18
+### Section 7, Oct 18
 
 #### Quiz 5 (Maps)
 
 Maps and hash maps.
 
-In textbook: Qs 10.1, 3, 6, 7, 10, 11, 33, 41, 61.
+In textbook: Qs 10.1, 2, 3, 33, 61. Read about the set ADT (10.5.1) 10.25, 26, 27, 28
+
+### Class 13, Oct 21
+
+More on Hash functions. Start collision resolutions
+
+Reading: 10.2, 11.1
+
+### Class 14, Oct 23
+
+#### Assignment 3 (Iterators and priority queues)  due
+Finish collision resolutions
+
+Reading: 10.2
+
+### Section 8, Oct 25
+
+#### Quiz 5 (Hash maps)
+
+Maps and hash maps.
+
+In textbook: Qs 10.4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 29, 41
+
+### Class 15, Oct 28
+
+#### Midterm
+
+### Class 16, Oct 30
+
+Binary search trees.
+
+In textbook: 11.1
+
+
+
 
 
