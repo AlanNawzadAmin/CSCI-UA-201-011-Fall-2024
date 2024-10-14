@@ -136,13 +136,13 @@ In textbook: Qs 10.1, 2, 3, 33, 61. Read about the set ADT (10.5.1) 10.25, 26, 2
 
 ### Class 13, Oct 21
 
-#### Assignment 3 (Iterators and priority queues)  due
 More on Hash functions. Start collision resolutions
 
 Reading: 10.2, 11.1
 
 ### Class 14, Oct 23
 
+#### Assignment 3 (Iterators and priority queues)  due
 Finish collision resolutions
 
 Reading: 10.2
