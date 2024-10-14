@@ -144,7 +144,7 @@ Reading: 10.2, 11.1
 
 Finish collision resolutions
 
-Reading: 10.2, 11.1
+Reading: 10.2
 
 ### Section 7, Oct 25
 
@@ -160,7 +160,9 @@ In textbook: Qs 10.4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 29, 41
 
 ### Class 17, Oct 30
 
-#### Midterm
+Binary search trees.
+
+In textbook: 11.1
 
 
 
