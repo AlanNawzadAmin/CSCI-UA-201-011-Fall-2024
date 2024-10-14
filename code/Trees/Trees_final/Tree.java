@@ -12,5 +12,5 @@ public interface Tree<E>{
 	int numChildren(Position<E> p);
 	int size();
 	boolean isEmpty();
-	GoodList<Position<E>> positions();
+	List<Position<E>> positions();
 }

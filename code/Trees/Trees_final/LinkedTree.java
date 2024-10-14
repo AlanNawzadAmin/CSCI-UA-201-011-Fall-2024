@@ -1,10 +1,10 @@
 package Trees_final;
 import LinkedList_final.DoublyLinkedList;
 import LinkedList_final.List;
-import StackQueues_final.Stack;
-import StackQueues_final.LinkedStack;
-import StackQueues_final.Queue;
-import StackQueues_final.LinkedQueue;
+import StackQueues.Stack;
+import StackQueues.LinkedStack;
+import StackQueues.Queue;
+import StackQueues.LinkedQueue;
 
 public class LinkedTree<E> implements Tree<E>{
 	private class Node implements Position<E>{
