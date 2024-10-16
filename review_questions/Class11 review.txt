@@ -1,0 +1,6 @@
+
+-- Traversals --
+What are the recursive relations we used to define the three canonical traversals?
+What order would the three canonical traversals and the two traversals from the search algorithms visit the nodes of the tree on the board?
+Come up with a new recursively defined traversal.
+Which two traversals we have covered are identical except one is the reverse of the other?
