@@ -165,7 +165,31 @@ Binary search trees.
 
 In textbook: 11.1
 
+### Section 9, Nov 1
+#### Quiz 6 (Binary search trees)
 
+Binary search trees
+
+In textbook: Qs 11.1, 2, 3, 4, 5, 8, 9, 29, 33
+
+### Class 17, Nov 4
+
+Getting, adding and removing from BSTs. Balanced trees.
+
+Reading: 11.1, 11.2
+
+### Class 18, Nov 6
+
+Adding and removing from AVL trees
+
+Reading: 11.3.
+
+### Section 10, Nov 8
+#### Quiz 6 (AVL trees)
+
+BST addition and deletion
+
+In textbook: 11.17, 19, 21, 22a, 47
 
 
 
