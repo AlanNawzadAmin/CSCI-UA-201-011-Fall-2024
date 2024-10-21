@@ -122,21 +122,21 @@ In textbook: All Qs from chapter 8 last week.
 
 ### Class 12, Oct 16
 
-Map ADT, Unsorted list implementation, Hash functions, compression functions
+Map ADT, Unsorted list implementation.
 
-Reading: Chapter 10.1, 10.2
+Reading: Chapter 10.1.
 
 ### Section 7, Oct 18
 
 #### Quiz 5 (Maps)
 
-Maps and hash maps.
+Maps.
 
 In textbook: Qs 10.1, 2, 3, 33, 61. Read about the set ADT (10.5.1) 10.25, 26, 27, 28
 
 ### Class 13, Oct 21
 
-More on Hash functions. Start collision resolutions
+Finish UnsortedMap. More on Hash functions. Start collision resolutions
 
 Reading: 10.2, 11.1
 
