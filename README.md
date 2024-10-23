@@ -136,14 +136,14 @@ In textbook: Qs 10.1, 2, 3, 33, 61. Read about the set ADT (10.5.1) 10.25, 26, 2
 
 ### Class 13, Oct 21
 
-Finish UnsortedMap. More on Hash functions. Start collision resolutions
+Finish UnsortedMap. More on Hash functions.
 
 Reading: 10.2, 11.1
 
 ### Class 14, Oct 23
 
 #### Assignment 3 (Iterators and priority queues)  due
-Finish collision resolutions
+Finish Hash map implementations. Fast implementation of entrySet.
 
 Reading: 10.2
 
@@ -151,7 +151,7 @@ Reading: 10.2
 
 #### Quiz 5 (Hash maps)
 
-Maps and hash maps.
+Maps and hash maps. 
 
 In textbook: Qs 10.4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 29, 41
 
@@ -161,7 +161,7 @@ In textbook: Qs 10.4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 29, 41
 
 ### Class 16, Oct 30
 
-Binary search trees.
+Finish collision resolution. Binary search trees.
 
 In textbook: 11.1
 
