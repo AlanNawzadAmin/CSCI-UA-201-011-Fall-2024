@@ -30,10 +30,10 @@ public class HashMap<K, V> implements Map<K, V>{
 	}
 	
 	public V put(K key, V value) {
-		size++;
 		int hash_code = key.hashCode();
 		int hash = hash_code % MAX_SIZE;
 		if (list[hash] == null) {
+			size++;
 			list[hash] = new EntryHash(key, value);
 			entryList.addLast(list[hash]);
 			list[hash].setPos(entryList.last());
@@ -64,7 +64,6 @@ public class HashMap<K, V> implements Map<K, V>{
 	public V remove(K key) {
 		int hash_code = key.hashCode();
 		int hash = hash_code % MAX_SIZE;
-		size--;
 		if (list[hash] == null) {
 			return null;
 		}
@@ -73,6 +72,7 @@ public class HashMap<K, V> implements Map<K, V>{
 			Position<Entry<K, V>> pos = list[hash].getpos();
 			entryList.remove(pos);
 			list[hash] = null;
+			size--;
 			return old_value;
 		}
 	}
