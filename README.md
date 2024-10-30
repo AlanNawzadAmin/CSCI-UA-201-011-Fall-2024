@@ -180,6 +180,8 @@ Reading: 11.1, 11.2
 
 ### Class 18, Nov 6
 
+#### Assignment 4 (Maps)  due
+
 Adding and removing from AVL trees
 
 Reading: 11.3.
