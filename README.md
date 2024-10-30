@@ -157,7 +157,7 @@ In textbook: Qs 10.4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 29, 41
 
 ### Class 15, Oct 28
 
-#### Midterm
+#### Midterm (two-sided cheat sheet allowed)
 
 ### Class 16, Oct 30
 
