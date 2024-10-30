@@ -170,7 +170,7 @@ In textbook: 11.1
 
 Binary search trees
 
-In textbook: Qs 11.1, 2, 3, 4, 5, 8, 9, 29, 33
+In textbook: Qs 11.1, 2, 3, 4, 33
 
 ### Class 17, Nov 4
 
@@ -189,7 +189,7 @@ Reading: 11.3.
 
 BST addition and deletion
 
-In textbook: 11.17, 19, 21, 22a, 47
+In textbook: 11.5, 8, 9, 17, 19, 21, 22a, 29, 47
 
 
 
