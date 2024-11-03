@@ -181,13 +181,7 @@ Reading: 11.1, 11.2
 ### Class 18, Nov 6
 #### Assignment 4 (Using maps)  due
 
-<<<<<<< HEAD
-Balanced trees. Adding and removing from AVL trees
-=======
-#### Assignment 4 (Maps)  due
-
 Adding and removing from AVL trees
->>>>>>> d77972529bd797e3740f6f89956773b032727fec
 
 Reading: 11.3.
 
