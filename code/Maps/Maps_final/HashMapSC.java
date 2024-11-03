@@ -17,26 +17,29 @@ public class HashMapSC<K, V> implements Map<K, V>{
 		}
 	}
 	
-	public V put(K key, V value) {
-		size++;
-		int hash_code = key.hashCode();
-		int hash = hash_code % MAX_SIZE;
-		return list[hash].put(key, value);
-	}
-	
 	public V get(K key) {
-		int hash_code = key.hashCode();
-		int hash = hash_code % MAX_SIZE;
+		int hash = key.hashCode() % MAX_SIZE;
 		return list[hash].get(key);
 	}
 	
 	public V remove(K key) {
-		size--;
-		int hash_code = key.hashCode();
-		int hash = hash_code % MAX_SIZE;
-		return list[hash].remove(key);
+		int hash = key.hashCode() % MAX_SIZE;
+		V value = list[hash].remove(key);
+		if (value != null) {
+			size--;
+		}
+		return value;
 	}
 	
+	public V put(K key, V value) {
+		int hash = key.hashCode() % MAX_SIZE;
+		V value_old = list[hash].put(key, value);
+		if (value_old == null) {
+			size++;
+		}
+		return value_old;
+	}
+
 	public int size() {return size;};
 	public boolean isEmpty() { return size() == 0;};
 	

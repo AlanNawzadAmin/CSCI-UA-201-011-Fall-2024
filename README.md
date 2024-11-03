@@ -174,22 +174,62 @@ In textbook: Qs 11.1, 2, 3, 4, 5, 8, 9, 29, 33
 
 ### Class 17, Nov 4
 
-Getting, adding and removing from BSTs. Balanced trees.
+Getting, adding and removing from BSTs. Implementing BSTs
 
 Reading: 11.1, 11.2
 
 ### Class 18, Nov 6
+#### Assignment 4 (Using maps)  due
 
-Adding and removing from AVL trees
+Balanced trees. Adding and removing from AVL trees
 
 Reading: 11.3.
 
 ### Section 10, Nov 8
-#### Quiz 6 (AVL trees)
+#### Quiz 6 (adding and removing from AVL trees)
 
-BST addition and deletion
+BST and AVL tree addition and deletion
 
 In textbook: 11.17, 19, 21, 22a, 47
+
+### Class 19, Nov 11
+#### Assignment 5 (Using BSTs)  due
+
+Implementing AVL trees.
+
+Reading: 11.3.
+
+### Class 20, Nov 13
+
+(a, b) trees
+
+Reading: 11.5, 15.2, 15.3
+
+### Section 11, Nov 15
+#### Quiz 7 (AVL trees implementation)
+
+AVL and (a, b) trees
+
+In textbook: TBD
+
+### Class 21, Nov 18
+
+Quadratic sorts, recap of PriorityQueues.
+
+Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort)
+
+### Class 22, Nov 20
+
+O(nlog n) efficiecy proof. Mergesort.
+
+Reading: 12.1, 12.3.1
+
+### Section 12, Nov 22
+#### Quiz 8 (Sorting)
+
+Sorting
+
+In textbook: 12.6, 7, 26 -- do these questions for all the sorting algorithms we have covered
 
 
 
