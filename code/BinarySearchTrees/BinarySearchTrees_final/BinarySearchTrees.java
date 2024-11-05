@@ -8,14 +8,17 @@ import Maps_final.Map;
 
 
 public abstract class BinarySearchTrees <V> implements Map<Integer, V>{
-	private class Node implements Entry<Integer, V>{
+	protected class Node implements Entry<Integer, V>{
 		private int key;
+		private int height;
 		private V value;
 		private Node left;
+		private Node parent;
 		private Node right;
-		Node(Integer key, V value){
+		Node(Integer key, V value, Node parent){
 			this.key = key;
 			this.value = value;
+			this.parent = parent;
 		}
 		public Integer getKey() {
 			return key;
@@ -26,11 +29,23 @@ public abstract class BinarySearchTrees <V> implements Map<Integer, V>{
 		public void setValue(V value) {
 			this.value = value;
 		}
+		public int getHeight() {
+			return height;
+		}
+		public void setHeight(int height) {
+			this.height = height;
+		}
+		public Node getParent() {
+			return parent;
+		}
 		public Node getLeft() {
 			return left;
 		}
 		public Node getRight() {
 			return right;
+		}
+		public void setParent(Node parent) {
+			this.parent = parent;
 		}
 		public void setLeft(Node left) {
 			this.left = left;
@@ -47,7 +62,7 @@ public abstract class BinarySearchTrees <V> implements Map<Integer, V>{
 	public int size() {return size;};
 	public boolean isEmpty() { return size() == 0;};
 	
-	private Node find_nearest(Integer key){
+	protected Node find_nearest(Integer key){
 		if (isEmpty()) return null;
 		else {
 			Node current_node = root;
@@ -73,7 +88,8 @@ public abstract class BinarySearchTrees <V> implements Map<Integer, V>{
 
 	public V put(Integer key, V value) {
 		if (isEmpty()) {
-			root = new Node(key, value);
+			root = new Node(key, value, null);
+			size++;
 			return null;
 		}
 		else {
@@ -84,11 +100,13 @@ public abstract class BinarySearchTrees <V> implements Map<Integer, V>{
 				return old_value;
 			}
 			else if (node.getKey() > key) {
-				node.setLeft(new Node(key, value));
+				node.setLeft(new Node(key, value, node));
+				size++;
 				return null;
 			}
 			else {
-				node.setRight(new Node(key, value));
+				node.setRight(new Node(key, value, node));
+				size++;
 				return null;
 			}
 		}
