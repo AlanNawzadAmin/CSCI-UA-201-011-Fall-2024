@@ -190,7 +190,7 @@ Reading: 11.3.
 
 BST implementation and AVL tree addition
 
-In textbook: 11.5, 8, 9, 17, 19, 21, 22a, 29, 47
+In textbook: 11.5, 8, 9, 29
 
 ### Class 19, Nov 11
 #### Assignment 5 (Using BSTs)  due
@@ -210,7 +210,7 @@ Reading: 11.5, 15.2, 15.3
 
 AVL and (a, b) trees
 
-In textbook: TBD
+In textbook: 17, 19, 21, 22a, 47
 
 ### Class 21, Nov 18
 
