@@ -186,9 +186,9 @@ Adding and removing from AVL trees
 Reading: 11.3.
 
 ### Section 10, Nov 8
-#### Quiz 6 (adding and removing from AVL trees)
+#### Quiz 6 (BST implementation or AVL tree addition)
 
-BST and AVL tree addition and deletion
+BST implementation and AVL tree addition
 
 In textbook: 11.5, 8, 9, 17, 19, 21, 22a, 29, 47
 
