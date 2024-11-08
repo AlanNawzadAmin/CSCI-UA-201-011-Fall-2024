@@ -3,4 +3,4 @@
 What is the definition of a binary search tree?
 How do you perform get in a BST?
 What is a balanced tree?
-Perform put(24, V), put(12), for the tree on the board.
+Perform put(24, V), put(12, V), put(42, V), put(16, V), for the tree on the board.
