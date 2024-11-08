@@ -203,7 +203,7 @@ Reading: 11.3.
 
 Quadratic sorts. O(nlog n) efficiecy proof.
 
-Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort), 12.1
+Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort), 12.3.1
 
 ### Section 11, Nov 15
 #### Quiz 8 (Sorting)
@@ -219,34 +219,68 @@ Bucketsort, and comparison of sorting algorithms.
 Reading: 12.3.2, 12.4
 
 ### Class 22, Nov 20
-#### Assignment 6 (Sorting with PriorityQueues)  due
+#### Assignment 6 (Sorting with PriorityQueues) due
 
 Mergesort.
 
-Reading: 12.3.1
+Reading: 12.1
 
 ### Section 12, Nov 22
 #### Quiz 8 (Efficient Sorting)
 
 Efficient Sorting
 
-In textbook: TBD
+In textbook: 12.6, 7, 18, 20-23, 35-37, 39, 42, 43, 46, 47 (answer for the algorithms we've covered)
 
 ### Class 23, Nov 25
 
 Heaps and Heapsort
 
-Reading: TBD
+Reading: 9.3, 9.4
 
 ### Class 24, Nov 27
 #### Assignment 7 (RadixSort)  due
 
 Heaps and Heapsort continued
 
-Reading: TBD
+Reading: 9.3, 9.4
 
 ###  Nov 29
 Have a good thanksgiving!
+Heap problems in textbook: 9.3, 4, 10, 11, 12, 16, 17, 19, 20, 21, 23, 30, 34
+
+### Class 25, Dec 2
+
+Quicksort.
+
+Reading: 12.2
+
+### Class 26, Dec 5
+#### Assignment 8 (Heaps) due
+
+Graph implementations
+
+Reading: 14.1, 14.2
+
+### Section 13, Dec 6
+#### Quiz 9 (Graphs)
+
+Graphs
+
+In textbook: 14.1-11, 38
+
+### Class 27, Dec 9
+
+Graph implementations continued
+
+Reading: 14.1, 14.2
+
+### Class 28, Dec 11
+#### Assignment 9 (TBD)  due
+
+Graph traversals
+
+Reading: 14.3
 
 
 
