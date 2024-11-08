@@ -181,7 +181,7 @@ Reading: 11.1, 11.2
 ### Class 18, Nov 6
 #### Assignment 4 (Using maps)  due
 
-Adding and removing from AVL trees
+Adding to AVL trees
 
 Reading: 11.3.
 
@@ -195,41 +195,58 @@ In textbook: 11.5, 8, 9, 29
 ### Class 19, Nov 11
 #### Assignment 5 (Using BSTs)  due
 
-Implementing AVL trees.
+AVL removal. Implementing AVL trees.
 
 Reading: 11.3.
 
 ### Class 20, Nov 13
 
-(a, b) trees
+Quadratic sorts. O(nlog n) efficiecy proof.
 
-Reading: 11.5, 15.2, 15.3
+Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort), 12.1
 
 ### Section 11, Nov 15
-#### Quiz 7 (AVL trees implementation)
-
-AVL and (a, b) trees
-
-In textbook: 17, 19, 21, 22a, 47
-
-### Class 21, Nov 18
-
-Quadratic sorts, recap of PriorityQueues.
-
-Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort)
-
-### Class 22, Nov 20
-
-O(nlog n) efficiecy proof. Mergesort.
-
-Reading: 12.1, 12.3.1
-
-### Section 12, Nov 22
 #### Quiz 8 (Sorting)
 
 Sorting
 
 In textbook: 12.6, 7, 26 -- do these questions for all the sorting algorithms we have covered
+
+### Class 21, Nov 18
+
+Bucketsort, and comparison of sorting algorithms.
+
+Reading: 12.3.2, 12.4
+
+### Class 22, Nov 20
+#### Assignment 6 (Sorting with PriorityQueues)  due
+
+Mergesort.
+
+Reading: 12.3.1
+
+### Section 12, Nov 22
+#### Quiz 8 (Efficient Sorting)
+
+Efficient Sorting
+
+In textbook: TBD
+
+### Class 23, Nov 25
+
+Heaps and Heapsort
+
+Reading: TBD
+
+### Class 24, Nov 27
+#### Assignment 7 (RadixSort)  due
+
+Heaps and Heapsort continued
+
+Reading: TBD
+
+###  Nov 29
+Have a good thanksgiving!
 
 
 
