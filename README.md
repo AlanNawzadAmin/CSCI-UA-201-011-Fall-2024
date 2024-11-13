@@ -206,7 +206,7 @@ Quadratic sorts. O(nlog n) efficiecy proof.
 Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort), 12.3.1
 
 ### Section 11, Nov 15
-#### Quiz 8 (Sorting)
+#### Quiz 8 (AVL addition)
 
 Sorting
 
