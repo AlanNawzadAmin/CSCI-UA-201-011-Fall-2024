@@ -226,7 +226,7 @@ Mergesort.
 Reading: 12.1
 
 ### Section 12, Nov 22
-#### Quiz 8 (Efficient Sorting)
+#### Quiz 9 (Efficient Sorting)
 
 Efficient Sorting
 
@@ -263,7 +263,7 @@ Graph implementations
 Reading: 14.1, 14.2
 
 ### Section 13, Dec 6
-#### Quiz 9 (Graphs)
+#### Quiz 10 (Graphs)
 
 Graphs
 
