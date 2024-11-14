@@ -275,12 +275,12 @@ Graph implementations continued
 
 Reading: 14.1, 14.2
 
-### Class 28, Dec 11
-#### Assignment 9 (TBD)  due
+### Section 14, Dec 11
+#### Quiz 11 (More graphs)
 
-Graph traversals
+TBD
 
-Reading: 14.3
+In textbook: TBD
 
 
 
