@@ -25,6 +25,8 @@ public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 	private Node highestChild(Node node) {
 		Node left = node.getLeft();
 		Node right = node.getRight();
+		if (left == null) return right; 
+		if (right == null) return left;
 		if (left.getHeight() > right.getHeight()) {
 			return left;
 		}
@@ -40,7 +42,7 @@ public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 		else {
 			parent.setRight(new_child);
 		}
-		old_child.setParent(parent);
+		new_child.setParent(parent);
 	}
 	
 	private void rotate(Node node) {
