@@ -1,5 +1,6 @@
 package BinarySearchTrees_final;
 
+
 // largely taken from textbook
 public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 	private boolean isBalanced(Node node) {
@@ -25,24 +26,30 @@ public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 	private Node highestChild(Node node) {
 		Node left = node.getLeft();
 		Node right = node.getRight();
-		if (left == null) return right; 
-		if (right == null) return left;
-		if (left.getHeight() > right.getHeight()) {
+		if(left == null){
+			return right;
+		}
+		else if (right == null) {
 			return left;
 		}
 		else {
-			return right;
+			if (left.getHeight() > right.getHeight()) {
+				return left;
+			}
+			else {
+				return right;
+			}
 		}
 	}
 	
-	private void replaceChild(Node parent, Node new_child, Node old_child) {
-		if (old_child == parent.getLeft()) {
+	private void replaceChild(Node parent, Node new_child, boolean isLeft) {
+		if (isLeft) {
 			parent.setLeft(new_child);
 		}
 		else {
 			parent.setRight(new_child);
 		}
-		new_child.setParent(parent);
+		if (new_child != null) new_child.setParent(parent);
 	}
 	
 	private void rotate(Node node) {
@@ -53,15 +60,15 @@ public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 			node.setParent(null);
 		}
 		else {
-			replaceChild(node_pp, node, node_p);
+			replaceChild(node_pp, node, node_p==node_pp.getLeft());
 		}
 		if (node == node_p.getLeft()) {
-			replaceChild(node_p, node.getRight(), node);
-			replaceChild(node, node_p, node.getRight());
+			replaceChild(node_p, node.getRight(), node==node_p.getLeft());
+			replaceChild(node, node_p, false);
 		}
 		else {
-			replaceChild(node_p, node.getLeft(), node);
-			replaceChild(node, node.getLeft(), node);
+			replaceChild(node_p, node.getLeft(), node==node_p.getLeft());
+			replaceChild(node, node_p, true);
 		}
 	}
 	
@@ -78,7 +85,7 @@ public abstract class AVLTree<V> extends BinarySearchTrees<V>{
 	private void rearrange(Node new_node) {
 		Node node = new_node.getParent();
 		while (isBalanced(node)) {
-			node.setHeight(node.getHeight() + 1);
+			recomputeHeight(node);
 			node = node.getParent();
 		}
 		if (node != null) {
