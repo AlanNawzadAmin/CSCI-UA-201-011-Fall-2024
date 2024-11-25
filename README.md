@@ -149,7 +149,7 @@ Reading: 10.2
 
 ### Section 8, Oct 25
 
-#### Quiz 5 (Hash maps)
+#### Quiz 6 (Hash maps)
 
 Maps and hash maps. 
 
@@ -166,7 +166,7 @@ Finish collision resolution. Binary search trees.
 In textbook: 11.1
 
 ### Section 9, Nov 1
-#### Quiz 6 (Binary search trees)
+#### Quiz 7 (Binary search trees)
 
 Binary search trees
 
@@ -186,7 +186,7 @@ Adding to AVL trees
 Reading: 11.3.
 
 ### Section 10, Nov 8
-#### Quiz 6 (BST implementation or AVL tree addition)
+#### Quiz 8 (BST implementation or AVL tree addition)
 
 BST implementation and AVL tree addition
 
@@ -206,7 +206,7 @@ Quadratic sorts. O(nlog n) efficiecy proof.
 Reading: 9.1, 9.2, 9.4.1, [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort), [bogo sort](https://en.wikipedia.org/wiki/Bogosort), 12.3.1
 
 ### Section 11, Nov 15
-#### Quiz 8 (AVL addition)
+#### Quiz 9 (AVL addition)
 
 Sorting
 
@@ -226,7 +226,7 @@ Mergesort.
 Reading: 12.1
 
 ### Section 12, Nov 22
-#### Quiz 9 (Efficient Sorting)
+#### Quiz 10 (Efficient Sorting)
 
 Efficient Sorting
 
@@ -251,19 +251,19 @@ Heap problems in textbook: 9.3, 4, 10, 11, 12, 16, 17, 19, 20, 21, 23, 30, 34
 
 ### Class 25, Dec 2
 
-Quicksort.
+Quicksort and Graph implementations.
 
-Reading: 12.2
+Reading: 12.2, 14.1, 14.2
 
 ### Class 26, Dec 5
 #### Assignment 8 (Heaps) due
 
-Graph implementations
+Graph implementations cont.
 
 Reading: 14.1, 14.2
 
 ### Section 13, Dec 6
-#### Quiz 10 (Graphs)
+#### Quiz 11 (Graphs)
 
 Graphs
 
@@ -271,12 +271,12 @@ In textbook: 14.1-11, 38
 
 ### Class 27, Dec 9
 
-Graph implementations continued
+Graph search.
 
 Reading: 14.1, 14.2
 
 ### Section 14, Dec 11
-#### Quiz 11 (More graphs)
+#### Quiz 12 (More graphs)
 
 TBD
 
