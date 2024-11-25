@@ -9,13 +9,13 @@ public class BucketSort {
 			max = Math.max(max, array[i].getKey());
 		}
 		
-		Entry<Integer, V>[] new_array = (Entry<Integer, V>[])(new Object[max]);
+		Entry<Integer, V>[] new_array = (Entry<Integer, V>[])(new Object[max+1]);
 		for (int i = 0; i<array.length; i++) {
 			new_array[array[i].getKey()] = array[i];
 		}
 		
 		int pos_in_arr = 0;
-		for (int i = 0; i<array.length; i++) {
+		for (int i = 0; i<new_array.length; i++) {
 			if (new_array[i] != null){
 				array[pos_in_arr] = new_array[i];
 				pos_in_arr++;

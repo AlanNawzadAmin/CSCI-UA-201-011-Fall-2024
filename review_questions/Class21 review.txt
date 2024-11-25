@@ -4,8 +4,10 @@ Describe an algorithm to check if a list is sorted. What is the complexity of th
 
 What are the best and worst case asymptotic computational complexities of insertion sort, selection sort, and bubble sort?
 
-Say we wish to sort 2, 1, 4, 3, 6, 5. Write out the list after each sweep of bubble sort. Write out the list after each addition in insertion and selection sort.
+Say we wish to sort 2, 1, 4, 3, 6, 5. Write out how merge sort sorts this list.
 
 What's the best a sorting algorithm which compares elements can do in terms of asymptotic computational complexity?
 
 How does bucket sort work? It's possible to extend bucket sort to sort lists which don't have all the integers from 0, ..., N, bot only some of them; describe how.
+
+What's the relationship between priority queues and sorting algorithms?
