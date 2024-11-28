@@ -241,9 +241,9 @@ Reading: 9.3, 9.4
 ### Class 24, Nov 27
 #### Assignment 7 (RadixSort)  due
 
-Heaps and Heapsort continued
+Heaps and Heapsort continued. Quicksort.
 
-Reading: 9.3, 9.4
+Reading: 12.2, 9.3, 9.4
 
 ###  Nov 29
 Have a good thanksgiving!
@@ -251,16 +251,16 @@ Heap problems in textbook: 9.3, 4, 10, 11, 12, 16, 17, 19, 20, 21, 23, 30, 34
 
 ### Class 25, Dec 2
 
-Quicksort and Graph implementations.
+Graph implementations.
 
-Reading: 12.2, 14.1, 14.2
+Reading: , 14.1, 14.2
 
 ### Class 26, Dec 5
 #### Assignment 8 (Heaps) due
 
-Graph implementations cont.
+Graph implementations cont. Searching graphs.
 
-Reading: 14.1, 14.2
+Reading: 14.1, 14.2, 14.3
 
 ### Section 13, Dec 6
 #### Quiz 11 (Graphs)
@@ -271,12 +271,13 @@ In textbook: 14.1-11, 38
 
 ### Class 27, Dec 9
 
-Graph search.
+Searching graphs.
 
-Reading: 14.1, 14.2
+Reading: 14.3
 
 ### Section 14, Dec 11
-#### Quiz 12 (More graphs)
+#### Assignment 9 (Graph implementations) due
+#### Quiz 12 (Graph search)
 
 TBD
 
