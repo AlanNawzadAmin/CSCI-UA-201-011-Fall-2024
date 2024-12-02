@@ -53,6 +53,7 @@ public class UnsortedMap<K, V> implements Map<K, V>{
 		V old_val = get(key);
 		if (old_val == null) {
 			entrylist.addLast(new UnsortEntry<K, V>(key, value));
+			size++;
 			return null;
 		}
 		else{
@@ -79,6 +80,7 @@ public class UnsortedMap<K, V> implements Map<K, V>{
 			Entry<K, V> entry = current_pos.getElement();
 			if (entry.getKey() == key) {
 				entrylist.remove(current_pos);
+				size--;
 				return entry.getValue();
 			}
 			current_pos = entrylist.after(current_pos);

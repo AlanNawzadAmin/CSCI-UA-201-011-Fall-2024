@@ -1,0 +1,7 @@
+
+-- Sorting -- 
+Add 1, 2, ..., 10 to a heap and then remove them all. Do the same with 10, 9, ..., 1.
+
+Write out the method QuickSort.
+
+How do you check if a position in a heap is a leaf?
