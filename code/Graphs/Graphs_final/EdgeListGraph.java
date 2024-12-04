@@ -127,8 +127,9 @@ public class EdgeListGraph<V, E>{
 	
 	void removeVertex(Vertex<V> v) {
 		Position<Edge<E, V>> current_pos = edges.first();
-		for(int i=0; i< n_edges;i++) {
-			Edge<E, V> edge = current_pos.getElement(); 
+		int n_edges_store = n_edges;
+		for(int i=0; i<n_edges_store; i++) {
+			Edge<E, V> edge = current_pos.getElement();
 			if(edge.getEndpoints()[0] == v || edge.getEndpoints()[1] == v) {
 				edges.remove(current_pos);
 				n_edges--;
