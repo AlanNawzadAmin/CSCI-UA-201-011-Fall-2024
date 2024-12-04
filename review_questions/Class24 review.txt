@@ -1,0 +1,8 @@
+
+-- Graphs --
+What is the in degree of a node? Out degree?
+What are the methods of the graph interface?
+Describe 3 implementations of Graph?
+In the EdgeList implementation, how can you get the outgoing edges of a vertex? If there are n vertices and m edges, what is the time complexity?
+If a graph has n vertices, what is the maximum number of edges it can have?
+How many edges does a tree with n vertices have?

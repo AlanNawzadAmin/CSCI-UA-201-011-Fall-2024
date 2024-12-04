@@ -39,6 +39,10 @@ public class EdgeListGraph<V, E>{
 	DoublyLinkedList<Edge<E, V>> edges;
 	int n_vertices;
 	int n_edges;
+	EdgeListGraph(){
+		vertices = new DoublyLinkedList<Vertex<V>>();
+		edges = new DoublyLinkedList<Edge<E, V>>();
+	}
 	
 	List<Vertex<V>> vertices(){
 		return vertices;
@@ -122,17 +126,14 @@ public class EdgeListGraph<V, E>{
 	}
 	
 	void removeVertex(Vertex<V> v) {
-		DoublyLinkedList<Edge<E, V>> outgoing = (DoublyLinkedList<Edge<E, V>>)(outgoingEdges(v));
-		DoublyLinkedList<Edge<E, V>> incoming = (DoublyLinkedList<Edge<E, V>>)(incomingEdges(v));
-		Position<Edge<E, V>> current_pos = outgoing.first();
-		for(int i=0; i<outgoing.size(); i++) {
-			removeEdge(current_pos.getElement());
-			current_pos = outgoing.after(current_pos);
-		}
-		current_pos = incoming.first();
-		for(int i=0; i<incoming.size(); i++) {
-			removeEdge(current_pos.getElement());
-			current_pos = outgoing.after(current_pos);
+		Position<Edge<E, V>> current_pos = edges.first();
+		for(int i=0; i< n_edges;i++) {
+			Edge<E, V> edge = current_pos.getElement(); 
+			if(edge.getEndpoints()[0] == v || edge.getEndpoints()[1] == v) {
+				edges.remove(current_pos);
+				n_edges--;
+			}
+			current_pos = edges.after(current_pos);
 		}
 		Position<Vertex<V>> current_pos_v = vertices.first();
 		for(int i=0; i< n_edges;i++) {
