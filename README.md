@@ -279,9 +279,13 @@ Reading: 14.3
 #### Assignment 9 (Graph implementations) due
 #### Quiz 12 (Graph search)
 
-TBD
+Makeup quizzes (make sure you've filled out the form in the syllabus!)!
 
-In textbook: TBD
+Textbook Qs for graph search: 14.12-16, 39, 42-44
+
+# Exam
+
+12/16/2024, Monday, 4 - 5:50 PM, 60 Fifth Ave Room 110
 
 
 
