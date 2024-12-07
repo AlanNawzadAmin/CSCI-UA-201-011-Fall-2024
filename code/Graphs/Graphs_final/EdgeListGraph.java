@@ -137,7 +137,7 @@ public class EdgeListGraph<V, E>{
 			current_pos = edges.after(current_pos);
 		}
 		Position<Vertex<V>> current_pos_v = vertices.first();
-		for(int i=0; i< n_edges;i++) {
+		for(int i=0; i< n_vertices;i++) {
 			Vertex<V> vert = current_pos_v.getElement(); 
 			if(vert == v) vertices.remove(current_pos_v);
 			current_pos_v = vertices.after(current_pos_v);
@@ -204,6 +204,7 @@ public class EdgeListGraph<V, E>{
 				
 				current_pos_level = level.after(current_pos_level);
 			}
+			level = next_level;
 		}
 		return false;
 	}
