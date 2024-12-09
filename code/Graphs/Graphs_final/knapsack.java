@@ -1,13 +1,11 @@
 package Graphs_final;
 
 public class knapsack {
-	private static Integer[] copyWithoutIndex(Integer[] list, int index) {
+	private static Integer[] copyWithoutFirst(Integer[] list) {
 //		copy list
 		Integer[] newList = new Integer[list.length - 1];
-		for (int j=0; j<list.length; j++) {
-			if (j != index) {
-				newList[(j>index) ? j : j-1] = list[j];
-			}
+		for (int j=0; j<list.length-1; j++) {
+			newList[j] = list[j+1];
 		}
 		return newList;
 	}
@@ -19,11 +17,11 @@ public class knapsack {
 			return target == 0;
 		}
 		boolean targetReached = false;
-		int i = 0;
-		while(i<list.length && !targetReached){
-			Integer[] newList = copyWithoutIndex(list, i);
-			targetReached = ks(newList, target - list[i]) || ks(newList, target);
-			i++;
+		Integer[] newList = copyWithoutFirst(list);
+		targetReached = ks(newList, target - list[0]);
+
+		if(!targetReached){
+			targetReached = ks(newList, target);
 		}
 		return targetReached;
 	}
