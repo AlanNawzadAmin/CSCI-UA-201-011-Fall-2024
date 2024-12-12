@@ -1,6 +1,6 @@
 package LinkedList_final;
 
-public class ArrayList<E> implements GoodList<E>{
+public class ArrayList<E> implements List<E>{
 	public static int MAX_SIZE = 1000;
 	E array[];
 	int size;
