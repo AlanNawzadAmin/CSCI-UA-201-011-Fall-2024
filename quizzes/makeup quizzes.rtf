@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red22\green21\blue22;\red246\green246\blue246;}
+{\*\expandedcolortbl;;\cssrgb\c11373\c10980\c11373;\cssrgb\c97255\c97255\c97255;}
+\margl1440\margr1440\vieww25320\viewh14320\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1.\
+Write a method for DoublyLinkedList<E> that moves the node at the middle of the list to the first position. Do so by manipulating the attributes of each node rather than using methods we\'92ve built for DoublyLinkedList.\
+\
+2.\
+Write a method for Queue<E> that reverses the queue by first placing all its elements into a stack. Write a similar method for stack.\
+\
+3.\
+Imagine you have a list of integers. Write a recursive method that takes in an array outputs a product of how many 1 's are at or before every position, starting at the first 1:\
+\
+number a's:        1  *  1 *  2 * 2 *  2 *  3 = 24 -> output\
+array          [ 9   , 6  ,  1 ,  2 ,  1  , 5  ,  2  ,  1 ]\
+\
+Hint: Use 2 auxillary variables: 1) as in binary search, pos the index you're at and 2) as in fibonacci, one_seen_so_far the number of 1\'92s you've seen so far.\
+\
+4.\
+Imagine a function int instanceInSubtree(Node<E> node, E element) that returns the number of times element appears int eh subtree rooted at node. Create a method that, for E element, returns a list of the value of instanceInSubtree for every node in the tree in a preorder traversal.This implementation should run in O(n) time, i.e. do not do a preorder traversal while calling instanceInSubtree. Instead use auxiliary variables.\
+\
+5.\
+In UnsortedMap<K, V>  we maintain a list of entries, entrylist , and perform get(K key)  by searching this list for an entry with a key that matches key; we also implemented put(K key, V value) by adding an entry to the end of entrylist. Imagine we implemented a map SortedMap<V>  that had integer keys and implemented put(Integer key, V value)  such that the keys of the entries in entrylist  are increasing. In this implementation we could write a more efficient implementation of V get(Integer key)  by performing binary search. Implement put and remove for this implementation.
+\f1\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 6.\
+Imagine I built a class wackyList extends DoublyLinkedList<Integer>  and I implement wackyList.equals  so that two wackyList s are equal if they have the same number of even entries and the last entry is the same For example, [0, 4, 7] and [2, 1, 2, 7] are equal because they both have two even entries and the entries at the last positions coincide. Implement a good hashCode  for wackyList. For convenience, you may use getAtIndex. Hint: 521 is prime.\
+\
+7.\
+Add the following numbers to a binary search tree. Redraw the tree after each addition. 42, 87, 14, 33, 123, 35, 75, 9, 54, 12, 43, 21, 11. Remove the number 42.\
+\
+8.\
+Add the numbers 10, 1, 8, 2, 7, 3, 6, 4, 5 to an AVL tree. Redraw the tree after each addition. Remove 5.\
+\
+9.\
+Write an efficient method void raiseElement(V element)  in AVLTree that finds a node that stores element and performs rotations to make it the root (you can assume tree is balanced and the heights of all nodes are all correct). Obviously don't worry about keeping the tree balanced or updating heights. You can assume the tree has at least 2 entries. What is the asymptotic computational complexity of this method?\
+\
+10.\
+\pard\pardeftab720\partightenfactor0
+\cf0 Imagine you have a method to merge n sorted arrays of integers int[] bigMerge(int[][] arrays)  where each element of arrays  is a sorted array itself. Write a merge sort algorithm that splits a list into up to 3 parts, sorts each, and then merges them. How does the asymptotic computational complexity of this method compare to the merge sort we looked at in class?\
+\
+11.\
+Say you have an EdgeListGraph<V, E> with n vertices, m edges, and maximum degree d. Write a method public boolean find_abc_collider(V a, V b, Vc)  that returns true if there are three vertices A, B, C that hold values a, b, c and such that B is the common child of A and C (i.e. A -> B <- C), (it's also ok if some of A, B, C are equal). There are many choices for an algorithm but make sure your method runs in either O(n + d) time or O(m + d) time. What is the runtime of your algorithm? Why? Bonus: if you've written a method that runs in O(m + d), describe how you would write one that runs in O(n + d), or vice versa.\
+\
+12.\
+Write a method Edge<E, V>[] shortestPath(Vertex<V> start, Vertex<V> end) that returns a shortest path (shortest in number of edges) between start and end if a path exists.\
+\
+\
+}
